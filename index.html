@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraWatch Pro | Conexão Total</title>
+  <meta name="description" content="AuraWatch Pro — Tecnologia de ponta em titânio e cristal de safira. Smartwatch com conectividade total e saúde sob seu controle." />
+  <meta name="theme-color" content="#0a0e1a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-primary-fixed-variant": "#004d73",
+            "on-error": "#1a0000",
+            "secondary": "#88b4cc",
+            "on-tertiary-fixed-variant": "#4d2a73",
+            "on-tertiary": "#1a002e",
+            "surface-container-lowest": "#0a0e1a",
+            "surface-bright": "#1a2438",
+            "surface-container-highest": "#202c42",
+            "error": "#ff6b6b",
+            "surface-tint": "#7dd3fc",
+            "surface-container-high": "#1a2438",
+            "primary": "#7dd3fc",
+            "on-secondary-fixed": "#0d1f2b",
+            "primary-container": "#0e4d6e",
+            "on-primary-container": "#c8eaff",
+            "surface-container-low": "#111828",
+            "secondary-fixed": "#c0d8e8",
+            "on-tertiary-container": "#e8d0ff",
+            "outline": "#4a6070",
+            "on-secondary": "#001f2e",
+            "on-secondary-container": "#c0d8e8",
+            "on-primary": "#001f2e",
+            "tertiary-container": "#3d2060",
+            "on-background": "#e0e8f0",
+            "on-tertiary-fixed": "#1a002e",
+            "primary-fixed": "#c8eaff",
+            "on-surface-variant": "#a0b4c4",
+            "tertiary": "#c8a0f0",
+            "surface-variant": "#1a2438",
+            "outline-variant": "#2a3a48",
+            "inverse-on-surface": "#0a0e1a",
+            "surface": "#0f1524",
+            "inverse-primary": "#0a4c6e",
+            "secondary-fixed-dim": "#88b4cc",
+            "tertiary-fixed-dim": "#c8a0f0",
+            "on-secondary-fixed-variant": "#2a4a5e",
+            "error-container": "#3d1414",
+            "surface-dim": "#0f1524",
+            "secondary-container": "#1a3a4e",
+            "on-primary-fixed": "#001f2e",
+            "inverse-surface": "#e0e8f0",
+            "on-surface": "#e0e8f0",
+            "tertiary-fixed": "#e8d0ff",
+            "on-error-container": "#ffb3b3",
+            "surface-container": "#141c2e",
+            "primary-fixed-dim": "#7dd3fc",
+            "background": "#0a0e1a"
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "1rem",
+            xl: "1.5rem",
+            full: "9999px"
+          },
+          spacing: {
+            "section-gap": "120px",
+            "gutter": "24px",
+            "margin-desktop": "64px",
+            "margin-mobile": "20px",
+            "unit": "8px",
+            "container-max": "1280px"
+          },
+          fontFamily: {
+            headline: ["Inter"],
+            display: ["Inter"],
+            body: ["Inter"],
+            label: ["Inter"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="overflow-x-hidden selection:bg-primary/30">
+
+  <header>
+    <nav class="fixed top-0 w-full bg-surface/40 backdrop-blur-xl z-50 border-b border-white/5" aria-label="Navegação principal">
+      <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <span class="text-2xl font-bold tracking-tighter text-primary">AuraWatch Pro</span>
+
+        <div class="hidden md:flex gap-10 items-center">
+          <a href="#performance" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Performance</a>
+          <a href="#design" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Design</a>
+          <a href="#wellness" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Wellness</a>
+          <a href="#specs" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Specs</a>
+          <button class="bg-primary text-on-primary font-bold py-2.5 px-8 rounded-full hover:opacity-90 transition-all active:scale-95" aria-label="Comprar AuraWatch Pro">Compre Agora</button>
+        </div>
+
+        <button class="md:hidden text-primary" aria-label="Abrir menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="relative pt-40 pb-section-gap overflow-hidden flex flex-col items-center" aria-label="Hero">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,_rgba(125,211,252,0.1),transparent_70%)] pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+        <span class="text-xs font-bold text-primary uppercase tracking-[0.4em] mb-6 block">Próxima Geração Wearable</span>
+
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight leading-[1.1] max-w-5xl mx-auto">
+          Conexão Total no Seu Pulso. <br /><span class="text-primary/90">Saúde Sob Seu Controle.</span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">
+          Tecnologia de ponta em titânio e cristal de safira. Acompanhe cada batida, cada mensagem e cada movimento com precisão cirúrgica.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-8 justify-center items-center mb-20">
+          <div class="flex flex-col text-left md:text-center">
+            <span class="text-on-surface-variant/60 line-through text-sm">De R$ 289,00</span>
+            <span class="text-primary font-bold text-4xl">R$ 187,00</span>
+          </div>
+          <button class="bg-primary text-on-primary font-extrabold py-5 px-12 rounded-full cta-glow text-lg transition-all transform hover:-translate-y-1 hover:scale-105" aria-label="Comprar por R$ 187,00">Compre Agora</button>
+        </div>
+
+        <div class="relative w-full max-w-sm mx-auto sm:max-w-md md:max-w-lg perspective-1000" id="hero-watch-container">
+          <div class="relative flex justify-center drop-shadow-[0_0_80px_rgba(125,211,252,0.15)]">
+            <canvas
+              id="watch-canvas"
+              class="w-full"
+              width="800"
+              height="800"
+              style="aspect-ratio: 1;"
+              role="img"
+              aria-label="AuraWatch Pro — relógio com mostrador animado em tempo real"
+            ></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-gap relative" id="design" aria-label="Conectividade">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+          <div class="scroll-reveal">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Conectividade Sem Limites</h2>
+            <p class="text-lg text-on-surface-variant mb-12 leading-relaxed">
+              Nunca perca o que importa. Receba notificações em tempo real e responda com um toque rápido em qualquer lugar.
+            </p>
+
+            <div class="space-y-6">
+              <article class="flex items-center gap-6 glass-card p-6 rounded-xl">
+                <div class="bg-primary/10 p-4 rounded-xl" aria-hidden="true">
+                  <span class="material-symbols-outlined text-primary text-2xl">chat_bubble</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-on-surface">WhatsApp &amp; IG</h3>
+                  <p class="text-on-surface-variant/80 text-sm">Leia mensagens e alertas instantaneamente.</p>
+                </div>
+              </article>
+
+              <article class="flex items-center gap-6 glass-card p-6 rounded-xl">
+                <div class="bg-primary/10 p-4 rounded-xl" aria-hidden="true">
+                  <span class="material-symbols-outlined text-primary text-2xl">call</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-on-surface">Chamadas de Voz</h3>
+                  <p class="text-on-surface-variant/80 text-sm">Microfone e alto-falante HD integrados.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="relative scroll-reveal">
+            <div class="absolute -inset-4 bg-primary/5 blur-3xl rounded-full" aria-hidden="true"></div>
+            <img
+              class="relative w-full h-[500px] object-cover rounded-3xl border border-white/5 shadow-2xl"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-ZHTeoB9Z1pOPTtkZo2doukKXDjEi9ISME9aNlZcXwcfiSz5byxh7LY-9c9PvTPziYqWx7G8i-Fb7xcFflX3QOzaoqrrdoFejrmLhi6Of5jXLxNM4ObuW0S5f2z_Uzn04VkR-KF7eLqzmLPqXk0mKk2MUfazA-ix6bTedxKhLYfCyFvP6iISP2hCanTv0bervpSllPtN7L2k4gDZ0qXSClSnKYaKPXSnfbDN93xT0T7GK2iiy0kd4SD0k6kXaKhan8SEZIPxhmI8"
+              alt="Interface do smartwatch exibindo notificações de redes sociais"
+              width="600"
+              height="750"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-gap bg-surface-container-low/30" id="wellness" aria-label="Bem-Estar">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-20">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Seu Assistente de Bem-Estar 24/7</h2>
+        <p class="text-lg text-on-surface-variant max-w-2xl mx-auto">
+          Monitore sua saúde com sensores de nível médico e IA integrada de última geração.
+        </p>
+      </div>
+
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <article class="glass-card p-10 rounded-2xl text-center flex flex-col items-center group transition-all hover:bg-white/[0.08] hover:-translate-y-2 scroll-reveal">
+            <div class="w-20 h-20 bg-error/10 rounded-full flex items-center justify-center mb-8" aria-hidden="true">
+              <span class="material-symbols-outlined text-error pulse-heart text-4xl">favorite</span>
+            </div>
+            <h3 class="font-bold text-xl mb-4">Ritmo Cardíaco</h3>
+            <p class="text-on-surface-variant font-medium leading-relaxed">Monitoramento contínuo com alertas inteligentes de arritmia e estresse.</p>
+          </article>
+
+          <article class="glass-card p-10 rounded-2xl text-center flex flex-col items-center group transition-all hover:bg-white/[0.08] hover:-translate-y-2 border-primary/20 scroll-reveal">
+            <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-8" aria-hidden="true">
+              <span class="material-symbols-outlined text-primary text-4xl">bedtime</span>
+            </div>
+            <h3 class="font-bold text-xl mb-4">Análise do Sono</h3>
+            <p class="text-on-surface-variant font-medium leading-relaxed">Relatórios detalhados sobre as fases REM, sono leve e profundo.</p>
+          </article>
+
+          <article class="glass-card p-10 rounded-2xl text-center flex flex-col items-center group transition-all hover:bg-white/[0.08] hover:-translate-y-2 scroll-reveal">
+            <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mb-8" aria-hidden="true">
+              <span class="material-symbols-outlined text-secondary text-4xl">water_drop</span>
+            </div>
+            <h3 class="font-bold text-xl mb-4">Lembrete de Hidratação</h3>
+            <p class="text-on-surface-variant font-medium leading-relaxed">Notificações inteligentes baseadas no seu nível de atividade e clima.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-gap" id="specs" aria-label="Especificações Técnicas">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">Especificações Técnicas</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <article class="md:col-span-2 glass-card p-10 rounded-2xl scroll-reveal">
+            <span class="material-symbols-outlined text-primary text-3xl mb-6" aria-hidden="true">display_settings</span>
+            <h3 class="font-bold text-2xl mb-4 text-on-surface">Tela Retina AMOLED</h3>
+            <p class="text-on-surface-variant text-lg">1.9" com 454x454 pixels e brilho de pico de 1000 nits para visibilidade total sob luz solar direta.</p>
+          </article>
+
+          <article class="glass-card p-10 rounded-2xl flex flex-col justify-between scroll-reveal">
+            <span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">battery_charging_full</span>
+            <div>
+              <h3 class="font-bold text-xl mb-2 text-on-surface">Bateria</h3>
+              <p class="text-on-surface-variant">Até 14 dias de uso contínuo.</p>
+            </div>
+          </article>
+
+          <article class="glass-card p-10 rounded-2xl flex flex-col justify-between scroll-reveal">
+            <span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">water</span>
+            <div>
+              <h3 class="font-bold text-xl mb-2 text-on-surface">Resistência</h3>
+              <p class="text-on-surface-variant">IP68 - À prova d'água 50m.</p>
+            </div>
+          </article>
+
+          <article class="md:col-span-3 glass-card p-10 rounded-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-8 scroll-reveal">
+            <div class="max-w-xl">
+              <h3 class="font-bold text-2xl mb-4 text-on-surface">Processador S9 Chip</h3>
+              <p class="text-on-surface-variant text-lg">Arquitetura de 4nm para transições ultra-suaves e eficiência energética sem precedentes.</p>
+            </div>
+            <div class="bg-primary/10 p-6 rounded-2xl" aria-hidden="true">
+              <span class="material-symbols-outlined text-primary text-5xl">memory</span>
+            </div>
+          </article>
+
+          <article class="glass-card p-10 rounded-2xl flex flex-col justify-between scroll-reveal">
+            <span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">translate</span>
+            <div>
+              <h3 class="font-bold text-xl mb-2 text-on-surface">Global</h3>
+              <p class="text-on-surface-variant">Suporte total a Português BR.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-gap bg-surface-container-lowest" aria-label="Garantia">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+        <div class="inline-flex items-center gap-3 px-6 py-2.5 bg-primary/5 rounded-full text-primary mb-10 border border-primary/20">
+          <span class="material-symbols-outlined text-lg" aria-hidden="true">verified_user</span>
+          <span class="text-xs font-bold uppercase tracking-widest">Garantia de Autenticidade</span>
+        </div>
+
+        <h2 class="text-3xl md:text-5xl font-bold mb-16">Sua Compra 100% Segura</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+          <article class="p-8 glass-card rounded-2xl border-l-4 border-l-primary scroll-reveal">
+            <h3 class="font-bold text-xl mb-4">Originalidade Garantida</h3>
+            <p class="text-on-surface-variant leading-relaxed">Produto enviado com certificado de autenticidade AuraWatch e número de série único.</p>
+          </article>
+
+          <article class="p-8 glass-card rounded-2xl border-l-4 border-l-primary scroll-reveal">
+            <h3 class="font-bold text-xl mb-4">Entrega Expressa</h3>
+            <p class="text-on-surface-variant leading-relaxed">Rastreamento detalhado em tempo real desde o nosso armazém até a sua porta.</p>
+          </article>
+
+          <article class="p-8 glass-card rounded-2xl border-l-4 border-l-primary scroll-reveal">
+            <h3 class="font-bold text-xl mb-4">Satisfação ou Reembolso</h3>
+            <p class="text-on-surface-variant leading-relaxed">30 dias para testar no seu ritmo. Se não amar a experiência, devolvemos seu dinheiro integralmente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="w-full py-20 bg-surface-container-lowest border-t border-white/5">
+    <div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-12">
+      <div class="flex flex-col items-center md:items-start gap-4">
+        <span class="text-2xl font-bold text-primary">AuraWatch Pro</span>
+        <p class="text-on-surface-variant text-sm max-w-xs text-center md:text-left opacity-80">
+          Elevando os padrões de tecnologia vestível com precisão e luxo.
+        </p>
+      </div>
+
+      <nav class="flex flex-wrap justify-center gap-10" aria-label="Links do rodapé">
+        <a href="#" class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">Privacy Policy</a>
+        <a href="#" class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">Terms of Service</a>
+        <a href="#" class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">Support</a>
+        <a href="#" class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">Retailers</a>
+      </nav>
+
+      <div class="text-on-surface-variant/60 text-xs font-medium">
+        &copy; 2024 Aura Engineering. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <aside class="fixed bottom-10 right-10 z-[60] flex flex-col items-end" aria-label="Compra rápida">
+    <button class="bg-primary text-on-primary font-black py-4.5 px-10 rounded-full shadow-[0_15px_40px_rgba(125,211,252,0.3)] flex items-center gap-3 hover:scale-105 active:scale-95 transition-all group" aria-label="Comprar agora">
+      <span class="material-symbols-outlined group-hover:rotate-12 transition-transform" aria-hidden="true">shopping_cart</span>
+      Compre Agora
+    </button>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/motion@11/dist/motion.js"></script>
+  <script>
+    (function () {
+      // ============================================================
+      // 1. Animated Analog Watch (Canvas)
+      // ============================================================
+      var canvas = document.getElementById('watch-canvas');
+      if (canvas) {
+        var ctx = canvas.getContext('2d');
+        var dpr = window.devicePixelRatio || 1;
+        var W = 800, H = 800;
+        var CX = W / 2, CY = H / 2;
+        var CASE_R = 350;
+
+        canvas.width = W * dpr;
+        canvas.height = H * dpr;
+        ctx.scale(dpr, dpr);
+
+        function drawWatch() {
+          var now = new Date();
+          var sp = new Date(now.getTime() - 3 * 3600000);
+          var h = sp.getUTCHours() % 12;
+          var m = sp.getUTCMinutes();
+          var s = sp.getUTCSeconds();
+          var ms = now.getMilliseconds();
+
+          ctx.clearRect(0, 0, W, H);
+
+          // ================================================================
+          // WATCH CASE — Brushed titanium body
+          // ================================================================
+          // Deep ambient shadow
+          ctx.shadowColor = 'rgba(0,0,0,0.5)';
+          ctx.shadowBlur = 40;
+          ctx.shadowOffsetX = 0;
+          ctx.shadowOffsetY = 8;
+          ctx.beginPath();
+          ctx.arc(CX, CY, CASE_R, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(0,0,0,0.01)';
+          ctx.fill();
+          ctx.shadowBlur = 0;
+          ctx.shadowOffsetX = 0;
+          ctx.shadowOffsetY = 0;
+
+          // Case drop shadow (closer)
+          ctx.beginPath();
+          ctx.arc(CX + 4, CY + 6, CASE_R + 1, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(0,0,0,0.35)';
+          ctx.fill();
+
+          // Main case body — brushed titanium
+          var caseGrad = ctx.createRadialGradient(CX - CASE_R * 0.25, CY - CASE_R * 0.25, 0, CX, CY, CASE_R);
+          caseGrad.addColorStop(0, '#7a8a9a');
+          caseGrad.addColorStop(0.15, '#5a6a7a');
+          caseGrad.addColorStop(0.4, '#3a4a5a');
+          caseGrad.addColorStop(0.7, '#2a3a48');
+          caseGrad.addColorStop(0.9, '#1a2a38');
+          caseGrad.addColorStop(1, '#0e1824');
+          ctx.beginPath();
+          ctx.arc(CX, CY, CASE_R, 0, Math.PI * 2);
+          ctx.fillStyle = caseGrad;
+          ctx.fill();
+
+          // Brushed metal ring (thin luminous edge)
+          ctx.beginPath();
+          ctx.arc(CX, CY, CASE_R - 1, 0, Math.PI * 2);
+          ctx.strokeStyle = 'rgba(200,220,240,0.15)';
+          ctx.lineWidth = 2;
+          ctx.stroke();
+
+          // Case inner bevel highlight
+          ctx.beginPath();
+          ctx.arc(CX, CY, CASE_R * 0.94, 0, Math.PI * 2);
+          ctx.strokeStyle = 'rgba(200,220,240,0.04)';
+          ctx.lineWidth = 1.5;
+          ctx.stroke();
+
+          // ================================================================
+          // CROWN
+          // ================================================================
+          roundRect(ctx, CX + CASE_R - 12, CY - 36, 22, 72, 7);
+          ctx.fillStyle = '#3a4a5a';
+          ctx.fill();
+          ctx.strokeStyle = 'rgba(200,220,240,0.12)';
+          ctx.lineWidth = 1;
+          ctx.stroke();
+
+          // Crown highlight left
+          roundRect(ctx, CX + CASE_R - 10, CY - 34, 6, 68, 5);
+          ctx.fillStyle = 'rgba(200,220,240,0.05)';
+          ctx.fill();
+
+          // Crown grooves
+          for (var i = 0; i < 7; i++) {
+            ctx.beginPath();
+            ctx.moveTo(CX + CASE_R + 5, CY - 28 + i * 10);
+            ctx.lineTo(CX + CASE_R + 5, CY - 20 + i * 10);
+            ctx.strokeStyle = 'rgba(0,0,0,0.4)';
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(CX + CASE_R + 6, CY - 28 + i * 10);
+            ctx.lineTo(CX + CASE_R + 6, CY - 20 + i * 10);
+            ctx.strokeStyle = 'rgba(200,220,240,0.06)';
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+
+          // ================================================================
+          // INNER BEZEL — with engraved minute track
+          // ================================================================
+          var bezelR = CASE_R * 0.87;
+
+          // Bezel ring
+          var bezelGrad = ctx.createRadialGradient(CX - bezelR * 0.35, CY - bezelR * 0.35, bezelR * 0.5, CX, CY, bezelR);
+          bezelGrad.addColorStop(0, '#5a6a7a');
+          bezelGrad.addColorStop(0.3, '#3a4a5a');
+          bezelGrad.addColorStop(0.6, '#2a3a48');
+          bezelGrad.addColorStop(1, '#1a2a38');
+          ctx.beginPath();
+          ctx.arc(CX, CY, bezelR, 0, Math.PI * 2);
+          ctx.fillStyle = bezelGrad;
+          ctx.fill();
+
+          // Bezel engraved minute markers
+          for (var i = 0; i < 60; i++) {
+            var a = (i * 6 - 90) * Math.PI / 180;
+            var outer = bezelR * 0.96;
+            var inner = i % 5 === 0 ? bezelR * 0.88 : bezelR * 0.93;
+            ctx.beginPath();
+            ctx.moveTo(CX + outer * Math.cos(a), CY + outer * Math.sin(a));
+            ctx.lineTo(CX + inner * Math.cos(a), CY + inner * Math.sin(a));
+            ctx.strokeStyle = i % 5 === 0 ? 'rgba(200,220,240,0.2)' : 'rgba(160,180,196,0.08)';
+            ctx.lineWidth = i % 5 === 0 ? 2 : 1;
+            ctx.stroke();
+          }
+
+          // Bezel inner edge
+          var faceR = bezelR * 0.92;
+          ctx.beginPath();
+          ctx.arc(CX, CY, faceR, 0, Math.PI * 2);
+          ctx.strokeStyle = 'rgba(125,211,252,0.06)';
+          ctx.lineWidth = 1;
+          ctx.stroke();
+
+          // ================================================================
+          // WATCH FACE — Sapphire crystal with deep black gradient
+          // ================================================================
+          var faceGrad = ctx.createRadialGradient(CX - faceR * 0.25, CY - faceR * 0.25, 0, CX, CY, faceR);
+          faceGrad.addColorStop(0, '#182038');
+          faceGrad.addColorStop(0.2, '#111a2e');
+          faceGrad.addColorStop(0.6, '#0a101e');
+          faceGrad.addColorStop(1, '#040810');
+          ctx.beginPath();
+          ctx.arc(CX, CY, faceR, 0, Math.PI * 2);
+          ctx.fillStyle = faceGrad;
+          ctx.fill();
+
+          // Subtle face texture (fine concentric rings)
+          for (var t = 0; t < 5; t++) {
+            var tr = faceR * (0.2 + t * 0.15);
+            ctx.beginPath();
+            ctx.arc(CX, CY, tr, 0, Math.PI * 2);
+            ctx.strokeStyle = 'rgba(255,255,255,0.015)';
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+
+          // ================================================================
+          // SCREEN CONTENT — Smartwatch UI
+          // ================================================================
+          var sw = faceR; // screen radius for UI elements
+
+          // --- Minute track ---
+          for (var i = 0; i < 60; i++) {
+            var a = (i * 6 - 90) * Math.PI / 180;
+            var d = sw * 0.88;
+            var x = CX + d * Math.cos(a);
+            var y = CY + d * Math.sin(a);
+            ctx.beginPath();
+            ctx.arc(x, y, i % 5 === 0 ? 2.5 : 1, 0, Math.PI * 2);
+            ctx.fillStyle = i % 5 === 0 ? 'rgba(125,211,252,0.45)' : 'rgba(160,180,196,0.15)';
+            ctx.fill();
+          }
+
+          // --- Hour markers (luminous dots) ---
+          for (var i = 0; i < 12; i++) {
+            var a = (i * 30 - 90) * Math.PI / 180;
+            var d = sw * 0.75;
+            var x = CX + d * Math.cos(a);
+            var y = CY + d * Math.sin(a);
+            var isMain = i % 3 === 0;
+
+            if (isMain) {
+              ctx.beginPath();
+              ctx.arc(x, y, 12, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(125,211,252,0.05)';
+              ctx.fill();
+            }
+
+            ctx.beginPath();
+            ctx.arc(x, y, isMain ? 4.5 : 3, 0, Math.PI * 2);
+            ctx.fillStyle = isMain ? '#7dd3fc' : 'rgba(125,211,252,0.4)';
+            ctx.fill();
+
+            if (isMain) {
+              ctx.shadowColor = 'rgba(125,211,252,0.3)';
+              ctx.shadowBlur = 6;
+              ctx.beginPath();
+              ctx.arc(x, y, 2, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(255,255,255,0.3)';
+              ctx.fill();
+              ctx.shadowBlur = 0;
+            }
+          }
+
+          // --- Brand ---
+          ctx.fillStyle = 'rgba(125,211,252,0.5)';
+          ctx.font = 'bold ' + (sw * 0.065) + 'px Inter, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('AuraWatch', CX, CY - sw * 0.52);
+
+          ctx.fillStyle = 'rgba(160,180,196,0.25)';
+          ctx.font = (sw * 0.032) + 'px Inter, sans-serif';
+          ctx.fillText('AUTOMATIC', CX, CY + sw * 0.52);
+
+          // --- Digital time (bottom) ---
+          var dh = ('0' + sp.getUTCHours()).slice(-2);
+          var dm = ('0' + sp.getUTCMinutes()).slice(-2);
+          ctx.fillStyle = 'rgba(224,232,240,0.5)';
+          ctx.font = (sw * 0.055) + 'px Inter, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(dh + ':' + dm, CX, CY + sw * 0.38);
+
+          // --- Date ---
+          var dateX = CX + sw * 0.38;
+          var dateY = CY + sw * 0.06;
+          ctx.fillStyle = 'rgba(10,14,26,0.7)';
+          roundRect(ctx, dateX - 14, dateY - 8, 28, 16, 4);
+          ctx.fill();
+          ctx.fillStyle = '#e0e8f0';
+          ctx.font = 'bold ' + (sw * 0.045) + 'px Inter, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(sp.getUTCDate(), dateX, dateY);
+
+          // --- Steps widget (top right) ---
+          var stepsX = CX + sw * 0.38;
+          var stepsY = CY - sw * 0.32;
+          ctx.fillStyle = 'rgba(125,211,252,0.08)';
+          roundRect(ctx, stepsX - 18, stepsY - 12, 36, 24, 6);
+          ctx.fill();
+          ctx.fillStyle = 'rgba(125,211,252,0.6)';
+          ctx.font = (sw * 0.032) + 'px Inter, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('⚡ 8.4k', stepsX, stepsY);
+
+          // --- Heart rate widget (top left) ---
+          var hrX = CX - sw * 0.38;
+          var hrY = CY - sw * 0.32;
+          ctx.fillStyle = 'rgba(255,107,107,0.08)';
+          roundRect(ctx, hrX - 18, hrY - 12, 36, 24, 6);
+          ctx.fill();
+          ctx.fillStyle = 'rgba(255,107,107,0.6)';
+          ctx.font = (sw * 0.03) + 'px Inter, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('♥ 72', hrX, hrY);
+
+          // ================================================================
+          // HANDS
+          // ================================================================
+          var hAngle = ((h % 12) * 30 + m * 0.5 - 90) * Math.PI / 180;
+          var mAngle = (m * 6 + s * 0.1 - 90) * Math.PI / 180;
+          var sAngle = ((s + ms / 1000) * 6 - 90) * Math.PI / 180;
+
+          // Hour hand
+          drawHand(ctx, CX, CY, hAngle, sw * 0.4, 7, '#7dd3fc');
+          // Minute hand
+          drawHand(ctx, CX, CY, mAngle, sw * 0.58, 4.5, '#7dd3fc');
+
+          // Second hand
+          ctx.save();
+          ctx.translate(CX, CY);
+          ctx.rotate(sAngle);
+          ctx.shadowColor = 'rgba(255,107,107,0.2)';
+          ctx.shadowBlur = 8;
+          ctx.beginPath();
+          ctx.moveTo(0, sw * 0.15);
+          ctx.lineTo(-2.5, -sw * 0.12);
+          ctx.lineTo(0, -sw * 0.78);
+          ctx.lineTo(2.5, -sw * 0.12);
+          ctx.closePath();
+          ctx.fillStyle = '#ff6b6b';
+          ctx.fill();
+          ctx.shadowBlur = 0;
+
+          // Second hand counterweight circle
+          ctx.beginPath();
+          ctx.arc(0, sw * 0.12, 4, 0, Math.PI * 2);
+          ctx.fillStyle = '#ff6b6b';
+          ctx.fill();
+          ctx.restore();
+
+          // Center cap
+          ctx.shadowColor = 'rgba(125,211,252,0.3)';
+          ctx.shadowBlur = 6;
+          ctx.beginPath();
+          ctx.arc(CX, CY, 5.5, 0, Math.PI * 2);
+          ctx.fillStyle = '#7dd3fc';
+          ctx.fill();
+          ctx.shadowBlur = 0;
+          ctx.beginPath();
+          ctx.arc(CX, CY, 2, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255,255,255,0.3)';
+          ctx.fill();
+
+          // ================================================================
+          // GLASS REFLECTION — Premium sapphire crystal
+          // ================================================================
+          // Diagonal glass sheen
+          var gg = ctx.createLinearGradient(CX - faceR * 1.2, CY - faceR * 1.2, CX + faceR * 0.6, CY + faceR * 0.6);
+          gg.addColorStop(0, 'rgba(255,255,255,0.07)');
+          gg.addColorStop(0.15, 'rgba(255,255,255,0.02)');
+          gg.addColorStop(0.35, 'rgba(255,255,255,0)');
+          gg.addColorStop(0.7, 'rgba(255,255,255,0)');
+          gg.addColorStop(0.9, 'rgba(255,255,255,0.015)');
+          gg.addColorStop(1, 'rgba(255,255,255,0.03)');
+          ctx.beginPath();
+          ctx.arc(CX, CY, faceR, 0, Math.PI * 2);
+          ctx.fillStyle = gg;
+          ctx.fill();
+
+          // Primary glare arc (top-left light source)
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(CX - faceR * 0.2, CY - faceR * 0.25, faceR * 0.8, -Math.PI * 0.65, -Math.PI * 0.1);
+          ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+          ctx.lineWidth = 12;
+          ctx.stroke();
+          ctx.restore();
+
+          // Secondary glare (bottom-right bounce light)
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(CX + faceR * 0.15, CY + faceR * 0.2, faceR * 0.6, Math.PI * 0.5, Math.PI * 0.9);
+          ctx.strokeStyle = 'rgba(125,211,252,0.03)';
+          ctx.lineWidth = 6;
+          ctx.stroke();
+          ctx.restore();
+
+          // Tiny specular highlight (bright spot)
+          ctx.beginPath();
+          ctx.arc(CX - faceR * 0.3, CY - faceR * 0.3, 3, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255,255,255,0.15)';
+          ctx.fill();
+
+          requestAnimationFrame(drawWatch);
+        }
+
+        function roundRect(ctx, x, y, w, h, r) {
+          ctx.beginPath();
+          ctx.moveTo(x + r, y);
+          ctx.lineTo(x + w - r, y);
+          ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+          ctx.lineTo(x + w, y + h - r);
+          ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+          ctx.lineTo(x + r, y + h);
+          ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+          ctx.lineTo(x, y + r);
+          ctx.quadraticCurveTo(x, y, x + r, y);
+          ctx.closePath();
+        }
+
+        function drawHand(ctx, cx, cy, angle, length, width, color) {
+          ctx.save();
+          ctx.translate(cx, cy);
+          ctx.rotate(angle);
+          ctx.shadowColor = 'rgba(0,0,0,0.4)';
+          ctx.shadowBlur = 6;
+
+          // Hand body
+          roundRect(ctx, -width / 2, -length, width, length, width / 2);
+          ctx.fillStyle = color;
+          ctx.fill();
+
+          // Hand highlight
+          ctx.shadowBlur = 0;
+          roundRect(ctx, -width * 0.2, -length * 0.9, width * 0.2, length * 0.7, 1);
+          ctx.fillStyle = 'rgba(255,255,255,0.1)';
+          ctx.fill();
+
+          ctx.restore();
+        }
+
+        drawWatch();
+      }
+
+      // ============================================================
+      // 2. Scroll Reveal
+      // ============================================================
+      (function () {
+        var motion = window.Motion;
+
+        function revealFallback() {
+          var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+              }
+            });
+          }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+          document.querySelectorAll('.scroll-reveal').forEach(function (el) {
+            observer.observe(el);
+          });
+        }
+
+        if (motion && motion.inView) {
+          document.querySelectorAll('.scroll-reveal').forEach(function (el) {
+            motion.inView(el, function () {
+              el.classList.add('active');
+            });
+          });
+        } else {
+          revealFallback();
+        }
+      })();
+
+      // ============================================================
+      // 3. Smooth Scroll for Anchor Links
+      // ============================================================
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          var targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          var targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // ============================================================
+      // 4. Hero Watch Container Parallax
+      // ============================================================
+      (function () {
+        var motion = window.Motion;
+        var container = document.getElementById('hero-watch-container');
+
+        if (!container) return;
+
+        if (motion && motion.scroll && motion.animate && window.innerWidth > 768) {
+          motion.scroll(
+            motion.animate(container, {
+              rotateX: [2, 0],
+              y: [0, -30]
+            }),
+            { target: document.documentElement }
+          );
+        } else {
+          window.addEventListener('scroll', function () {
+            if (window.innerWidth <= 768) return;
+            var p = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+            container.style.transform = 'rotateX(' + (2 - p * 2) + 'deg) translateY(' + (p * -30) + 'px)';
+          });
+        }
+      })();
+    })();
+  </script>
+</body>
+</html>
