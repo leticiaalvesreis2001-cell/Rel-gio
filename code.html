@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AuraWatch Pro | Conexão Total</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#004d73",
+                    "on-error": "#1a0000",
+                    "secondary": "#88b4cc",
+                    "on-tertiary-fixed-variant": "#4d2a73",
+                    "on-tertiary": "#1a002e",
+                    "surface-container-lowest": "#0a0e1a",
+                    "surface-bright": "#1a2438",
+                    "surface-container-highest": "#202c42",
+                    "error": "#ff6b6b",
+                    "surface-tint": "#7dd3fc",
+                    "surface-container-high": "#1a2438",
+                    "primary": "#7dd3fc",
+                    "on-secondary-fixed": "#0d1f2b",
+                    "primary-container": "#0e4d6e",
+                    "on-primary-container": "#c8eaff",
+                    "surface-container-low": "#111828",
+                    "secondary-fixed": "#c0d8e8",
+                    "on-tertiary-container": "#e8d0ff",
+                    "outline": "#4a6070",
+                    "on-secondary": "#001f2e",
+                    "on-secondary-container": "#c0d8e8",
+                    "on-primary": "#001f2e",
+                    "tertiary-container": "#3d2060",
+                    "on-background": "#e0e8f0",
+                    "on-tertiary-fixed": "#1a002e",
+                    "primary-fixed": "#c8eaff",
+                    "on-surface-variant": "#a0b4c4",
+                    "tertiary": "#c8a0f0",
+                    "surface-variant": "#1a2438",
+                    "outline-variant": "#2a3a48",
+                    "inverse-on-surface": "#0a0e1a",
+                    "surface": "#0f1524",
+                    "inverse-primary": "#0a4c6e",
+                    "secondary-fixed-dim": "#88b4cc",
+                    "tertiary-fixed-dim": "#c8a0f0",
+                    "on-secondary-fixed-variant": "#2a4a5e",
+                    "error-container": "#3d1414",
+                    "surface-dim": "#0f1524",
+                    "secondary-container": "#1a3a4e",
+                    "on-primary-fixed": "#001f2e",
+                    "inverse-surface": "#e0e8f0",
+                    "on-surface": "#e0e8f0",
+                    "tertiary-fixed": "#e8d0ff",
+                    "on-error-container": "#ffb3b3",
+                    "surface-container": "#141c2e",
+                    "primary-fixed-dim": "#7dd3fc",
+                    "background": "#0a0e1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "display": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        @keyframes pulse-heart {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.15); opacity: 0.9; }
+        }
+        .pulse-heart { animation: pulse-heart 1.5s ease-in-out infinite; }
+        
+        .glass-card {
+            background: rgba(125, 211, 252, 0.05);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-glow:hover {
+            box-shadow: 0 0 25px rgba(125, 211, 252, 0.4);
+        }
+
+        body {
+            background-color: #0a0e1a;
+            color: #e0e8f0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary/30 overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full bg-surface/40 backdrop-blur-xl z-50 border-b border-white/5">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<span class="text-2xl font-bold tracking-tighter text-primary">AuraWatch Pro</span>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#performance">Performance</a>
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#design">Design</a>
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#wellness">Wellness</a>
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#specs">Specs</a>
+<button class="bg-primary text-on-primary font-bold py-2.5 px-8 rounded-full hover:opacity-90 transition-all active:scale-95">Compre Agora</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative pt-40 pb-section-gap overflow-hidden flex flex-col items-center">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,_rgba(125,211,252,0.1),transparent_70%)] pointer-events-none"></div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<span class="text-xs font-bold text-primary uppercase tracking-[0.4em] mb-6 block">Próxima Geração Wearable</span>
+<h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight leading-[1.1] max-w-5xl mx-auto">
+                    Conexão Total no Seu Pulso. <br/><span class="text-primary/90">Saúde Sob Seu Controle.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">
+                    Tecnologia de ponta em titânio e cristal de safira. Acompanhe cada batida, cada mensagem e cada movimento com precisão cirúrgica.
+                </p>
+<div class="flex flex-col md:flex-row gap-8 justify-center items-center mb-20">
+<div class="flex flex-col text-left md:text-center">
+<span class="text-on-surface-variant/60 line-through text-sm">De R$ 289,00</span>
+<span class="text-primary font-bold text-4xl">R$ 187,00</span>
+</div>
+<button class="bg-primary text-on-primary font-extrabold py-5 px-12 rounded-full cta-glow text-lg transition-all transform hover:-translate-y-1 hover:scale-105">Compre Agora</button>
+</div>
+<!-- Hero Image Container -->
+<div class="relative w-full max-w-3xl mx-auto perspective-1000" id="hero-watch-container">
+<img class="w-full h-auto object-contain drop-shadow-[0_0_80px_rgba(125,211,252,0.15)] transition-transform duration-500 ease-out" data-alt="A high-end smartwatch with a brushed titanium finish and a deep black sapphire glass face." id="main-watch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-4sW-OYg8IJVc0_qSYp9bv_xZvyLGrh0uYyF2WpwgClwJhaUXy8rsONRFijPCMe7trj-seh9Nd2GqVCQL8cJVr4xBhJlNHHDqrX36bqb5CjYRgW8aJaIbWIn_mI-I-yVFv9CtIYsXB5fqTOaTJcTEMTcSupDL-3GU367fk3f4ud1CM6qae28qMsG0rGwrubMlsr3PvuWgcZShBOk66Dut0656NbaRANj0MQQXly06H2hM7nOBduLD9UDp3cu6KrwH-6HMNLHKv6I"/>
+</div>
+</div>
+</section>
+<!-- Connectivity Section -->
+<section class="py-section-gap relative" id="design">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="scroll-reveal">
+<h2 class="text-3xl md:text-4xl font-bold mb-8">Conectividade Sem Limites</h2>
+<p class="text-lg text-on-surface-variant mb-12 leading-relaxed">
+                            Nunca perca o que importa. Receba notificações em tempo real e responda com um toque rápido em qualquer lugar.
+                        </p>
+<div class="space-y-6">
+<div class="flex items-center gap-6 glass-card p-6 rounded-xl">
+<div class="bg-primary/10 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary text-2xl">chat_bubble</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-on-surface">WhatsApp &amp; IG</h4>
+<p class="text-on-surface-variant/80 text-sm">Leia mensagens e alertas instantaneamente.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 glass-card p-6 rounded-xl">
+<div class="bg-primary/10 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary text-2xl">call</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-on-surface">Chamadas de Voz</h4>
+<p class="text-on-surface-variant/80 text-sm">Microfone e alto-falante HD integrados.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative scroll-reveal">
+<div class="absolute -inset-4 bg-primary/5 blur-3xl rounded-full"></div>
+<img class="relative w-full h-[500px] object-cover rounded-3xl border border-white/5 shadow-2xl" data-alt="Close up of a luxury smartwatch interface displaying social media notification icons." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-ZHTeoB9Z1pOPTtkZo2doukKXDjEi9ISME9aNlZcXwcfiSz5byxh7LY-9c9PvTPziYqWx7G8i-Fb7xcFflX3QOzaoqrrdoFejrmLhi6Of5jXLxNM4ObuW0S5f2z_Uzn04VkR-KF7eLqzmLPqXk0mKk2MUfazA-ix6bTedxKhLYfCyFvP6iISP2hCanTv0bervpSllPtN7L2k4gDZ0qXSClSnKYaKPXSnfbDN93xT0T7GK2iiy0kd4SD0k6kXaKhan8SEZIPxhmI8"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Wellness Assistant Section -->
+<section class="py-section-gap bg-surface-container-low/30" id="wellness">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-20">
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Seu Assistente de Bem-Estar 24/7</h2>
+<p class="text-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Monitore sua saúde com sensores de nível médico e IA integrada de última geração.
+                </p>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-card p-10 rounded-2xl text-center flex flex-col items-center group transition-all hover:bg-white/[0.08] hover:-translate-y-2">
+<div class="w-20 h-20 bg-error/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-error pulse-heart text-4xl">favorite</span>
+</div>
+<h3 class="font-bold text-xl mb-4">Ritmo Cardíaco</h3>
+<p class="text-on-surface-variant font-medium leading-relaxed">Monitoramento contínuo com alertas inteligentes de arritmia e estresse.</p>
+</div>
+<div class="glass-card p-10 rounded-2xl text-center flex flex-col items-center group transition-all hover:bg-white/[0.08] hover:-translate-y-2 border-primary/20">
+<div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-4xl">bedtime</span>
+</div>
+<h3 class="font-bold text-xl mb-4">Análise do Sono</h3>
+<p class="text-on-surface-variant font-medium leading-relaxed">Relatórios detalhados sobre as fases REM, sono leve e profundo.</p>
+</div>
+<div class="glass-card p-10 rounded-2xl text-center flex flex-col items-center group transition-all hover:bg-white/[0.08] hover:-translate-y-2">
+<div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-4xl">water_drop</span>
+</div>
+<h3 class="font-bold text-xl mb-4">Lembrete de Hidratação</h3>
+<p class="text-on-surface-variant font-medium leading-relaxed">Notificações inteligentes baseadas no seu nível de atividade e clima.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specs Bento Grid -->
+<section class="py-section-gap" id="specs">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">Especificações Técnicas</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-2 glass-card p-10 rounded-2xl">
+<span class="material-symbols-outlined text-primary text-3xl mb-6">display_settings</span>
+<h4 class="font-bold text-2xl mb-4 text-on-surface">Tela Retina AMOLED</h4>
+<p class="text-on-surface-variant text-lg">1.9" com 454x454 pixels e brilho de pico de 1000 nits para visibilidade total sob luz solar direta.</p>
+</div>
+<div class="glass-card p-10 rounded-2xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-3xl">battery_charging_full</span>
+<div>
+<h4 class="font-bold text-xl mb-2 text-on-surface">Bateria</h4>
+<p class="text-on-surface-variant">Até 14 dias de uso contínuo.</p>
+</div>
+</div>
+<div class="glass-card p-10 rounded-2xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-3xl">water</span>
+<div>
+<h4 class="font-bold text-xl mb-2 text-on-surface">Resistência</h4>
+<p class="text-on-surface-variant">IP68 - À prova d'água 50m.</p>
+</div>
+</div>
+<div class="md:col-span-3 glass-card p-10 rounded-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+<div class="max-w-xl">
+<h4 class="font-bold text-2xl mb-4 text-on-surface">Processador S9 Chip</h4>
+<p class="text-on-surface-variant text-lg">Arquitetura de 4nm para transições ultra-suaves e eficiência energética sem precedentes.</p>
+</div>
+<div class="bg-primary/10 p-6 rounded-2xl">
+<span class="material-symbols-outlined text-primary text-5xl">memory</span>
+</div>
+</div>
+<div class="glass-card p-10 rounded-2xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-3xl">translate</span>
+<div>
+<h4 class="font-bold text-xl mb-2 text-on-surface">Global</h4>
+<p class="text-on-surface-variant">Suporte total a Português BR.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Guarantee Section -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="inline-flex items-center gap-3 px-6 py-2.5 bg-primary/5 rounded-full text-primary mb-10 border border-primary/20">
+<span class="material-symbols-outlined text-lg">verified_user</span>
+<span class="text-xs font-bold uppercase tracking-widest">Garantia de Autenticidade</span>
+</div>
+<h2 class="text-3xl md:text-5xl font-bold mb-16">Sua Compra 100% Segura</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+<div class="p-8 glass-card rounded-2xl border-l-4 border-l-primary">
+<h4 class="font-bold text-xl mb-4">Originalidade Garantida</h4>
+<p class="text-on-surface-variant leading-relaxed">Produto enviado com certificado de autenticidade AuraWatch e número de série único.</p>
+</div>
+<div class="p-8 glass-card rounded-2xl border-l-4 border-l-primary">
+<h4 class="font-bold text-xl mb-4">Entrega Expressa</h4>
+<p class="text-on-surface-variant leading-relaxed">Rastreamento detalhado em tempo real desde o nosso armazém até a sua porta.</p>
+</div>
+<div class="p-8 glass-card rounded-2xl border-l-4 border-l-primary">
+<h4 class="font-bold text-xl mb-4">Satisfação ou Reembolso</h4>
+<p class="text-on-surface-variant leading-relaxed">30 dias para testar no seu ritmo. Se não amar a experiência, devolvemos seu dinheiro integralmente.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 bg-surface-container-lowest border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-2xl font-bold text-primary">AuraWatch Pro</span>
+<p class="text-on-surface-variant text-sm max-w-xs text-center md:text-left opacity-80">
+                    Elevando os padrões de tecnologia vestível com precisão e luxo.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Support</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Retailers</a>
+</div>
+<div class="text-on-surface-variant/60 text-xs font-medium">
+                © 2024 Aura Engineering. All rights reserved.
+            </div>
+</div>
+</footer>
+<!-- Sticky Floating CTA -->
+<div class="fixed bottom-10 right-10 z-[60] flex flex-col items-end">
+<button class="bg-primary text-on-primary font-black py-4.5 px-10 rounded-full shadow-[0_15px_40px_rgba(125,211,252,0.3)] flex items-center gap-3 hover:scale-105 active:scale-95 transition-all group">
+<span class="material-symbols-outlined group-hover:rotate-12 transition-transform">shopping_cart</span>
+            Compre Agora
+        </button>
+</div>
+<script>
+        // Scroll Reveal Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        // Parallax/Rotation for main watch
+        const mainWatch = document.getElementById('main-watch');
+        window.addEventListener('scroll', () => {
+            const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+            const rotation = scrollPercent * 30; // Reduced for subtle feel
+            const translation = scrollPercent * -60;
+            
+            if (mainWatch && window.innerWidth > 768) {
+                mainWatch.style.transform = `rotate(${rotation}deg) translateY(${translation}px)`;
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body></html>
